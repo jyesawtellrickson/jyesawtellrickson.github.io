@@ -4,7 +4,7 @@ title: Autoregressive Errors are Independent?
 categories: [LLMs]
 ---
 
-In his (2024 interview with Lex Fridman)[https://www.youtube.com/watch?v=gn6v2q443Ew], Yann LeCunn claims that LLMs "are doomed" due to their autoregressive nature. He states that if we assume that the prediction errors from token to token are independent then it will eventually lead to a sequence being 'incorrect'. He does state that this is a strong assumption, but how strong is it? 
+In his [2024 interview with Lex Fridman](https://www.youtube.com/watch?v=gn6v2q443Ew), Yann LeCunn claims that LLMs "are doomed" due to their autoregressive nature. He states that if we assume that the prediction errors from token to token are independent then it will eventually lead to a sequence being 'incorrect'. He does state that this is a strong assumption, but how strong is it? 
 
 Lex rightly asks in response if the autoregression process could be 'self-correcting' or 'gravitating towards the truth' due to the model's training data. This seems a completely reasonable rebuttal. Let's explore it.
 
