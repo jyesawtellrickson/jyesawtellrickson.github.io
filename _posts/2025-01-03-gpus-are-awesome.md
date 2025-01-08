@@ -14,4 +14,4 @@ I do have some understanding of GPUs (e.g. x-much VRAM to fit your model) and re
 
 I didn't run a test, but according to [this](https://www.hardware-corner.net/guides/hardware-for-mistral-llm/) summary, inference for Mistral 7b is around 60 tokens/s on my GPU. Considering each token utilises the 9GB, that's 0.5TB parameters processed each second (and math done on top of that!). Mind boggling.
 
-An unrelated, informative video on CUDA I watched recently to end this post: [How CUDA Programming Works | GTC 2022](https://www.youtube.com/watch?v=n6M8R8-PlnE&list=PLdmLRmaL6vCjaR9u79Dc0gjGXV_DvdUHe&index=5&ab_channel=DantheMan).
+An unrelated, informative video on CUDA I watched recently to end this post: [How CUDA Programming Works GTC 2022](https://www.youtube.com/watch?v=n6M8R8-PlnE&list=PLdmLRmaL6vCjaR9u79Dc0gjGXV_DvdUHe&index=5&ab_channel=DantheMan).
