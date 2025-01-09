@@ -4,6 +4,7 @@ Render locally using
 ```sh
 bundle exec jekyll serve --baseurl=""
 ```
+(based on [this guide](https://github.com/github/docs/blob/main/content/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll.md))
 
 The website can then be viewed at: http://127.0.0.1:4000/
 
