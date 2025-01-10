@@ -30,8 +30,13 @@ Reasoning is not something that's new to AI. It has been studied throughout hist
 
 Critical Thinking
 Creative Reasoning
+Commonsense
+Combinatorial
 Counterfactual Reasoning: imagining alternative scenarios and their outcomes
 Reasoning under uncertaintity: making decisions when information is incomplete or noisy.
+
+Neuro-symbolic artificial intelligence: a survey (Bhuyan et al., 2024)
+
 
 ## Where are we today?
 
