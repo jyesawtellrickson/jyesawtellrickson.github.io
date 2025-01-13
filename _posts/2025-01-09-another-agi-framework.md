@@ -52,7 +52,7 @@ I like to think of each of these areas in terms of the amount of investment and 
 Notably:
 - We've made great progress with LLMs as a storage of facts and at another level, functions for common text manipulations (e.g. writing poetry). Massive amounts of money have been thrown at the problem and it paid off.
 - Reasoning is the next big thing, and models like o3 show how much money can be spent here ($2K to solve a single ARC task). While these models show improved reasoning against the baselines, it's still clear from the failure modes that they're not truly generalising when they make simple off-by-one errors. Still plenty of progress to be made.
-- The more agentic capabilities (always on, goald-driven) still require more investment and more progress. When the core capabilities aren't yet there, it's less exciting to work on this, but given how fast the core capabilities have increased, investment is well overdue.
+- The more agentic capabilities (always on, goal-driven) still require more investment and more progress. When the core capabilities aren't yet there, it's less exciting to work on this, but given how fast the core capabilities have increased, investment is well overdue.
 
 ## Next steps
 
