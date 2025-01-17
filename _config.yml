@@ -89,6 +89,12 @@ plugins:
 
 include: ['_pages']
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title/
+    source: _projects
+
 paginate: 6
 paginate_path: /page:num/
 
