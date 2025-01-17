@@ -13,7 +13,7 @@ At a high-level I split capabilities into two categories, core and agency.
     - Knowledge-base
     - Reasoning
     - Prediction
-    - Learning
+    - [Learning]({% post_url 2025-01-13-learning %})
 - Agency
     - Goal-driven
     - Always on
