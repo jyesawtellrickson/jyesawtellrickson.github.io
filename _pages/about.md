@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a WIP AI researcher currently pursuing his Master's in Taiwan with a focus on general intelligence.
+I'm Jye Sawtell-Rickson, a WIP AI researcher currently pursuing his Master's in Taiwan with a focus on general intelligence.
 
 Reach out to me on {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank">LinkedIn</a>{% endif %} if you want to chat.
 
