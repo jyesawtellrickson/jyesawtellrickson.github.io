@@ -11,7 +11,7 @@ Before that, we quickly clarify what we mean by an AGI by starting with the defi
 At a high-level I split capabilities into two categories, core and agency. 
 - Core
     - Knowledge-base
-    - Reasoning
+    - [Reasoning]({% post_url 2024-12-29-what-is-reasoning %})
     - Prediction
     - [Learning]({% post_url 2025-01-13-learning %})
 - Agency

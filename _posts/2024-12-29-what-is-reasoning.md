@@ -1,10 +1,12 @@
 ---
 layout: post
-title: What is reasoning?
+title: What is Reasoning?
 categories: [AGI]
 ---
 
 There's a lot of talk about whether LLM's can reason or not. With the release of OpenAI's o1 and now the upcoming release of o3 which are touted to be strong reasoners, it seems we're getting close to 'reasoning capabilities', but what does that mean? Let's try to debug what reasoning is.
+
+> Part of my [AGI Framework Series]({% post_url 2025-01-09-another-agi-framework %}). Check the other requirements for AGI.
 
 One basic definition we can start with: "reasoning refers to the ability of an intelligent system to logically process information, draw inferences, solve problems, and make decisions in a manner that is flexible, robust, and generalizable across domains." 
 
