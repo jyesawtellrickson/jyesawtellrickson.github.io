@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Another Framework for General Intelligence
+title: A Basic Framework for General Intelligence
 categories: [AGI]
 ---
 
@@ -11,9 +11,9 @@ Before that, we quickly clarify what we mean by an AGI by starting with the defi
 At a high-level I split capabilities into two categories, core and agency. 
 - Core
     - Knowledge-base
-    - [Reasoning]({% post_url 2024-12-29-what-is-reasoning %})
+    - [Reasoning]({% post_url 2025-01-16-what-is-reasoning %})
     - Prediction
-    - [Learning]({% post_url 2025-01-13-learning %})
+    - [Learning]({% post_url 2025-01-16-learning %})
 - Agency
     - Goal-driven
     - Always on
