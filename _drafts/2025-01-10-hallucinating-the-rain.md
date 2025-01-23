@@ -1,0 +1,1 @@
+Hallucination article with % rainy days

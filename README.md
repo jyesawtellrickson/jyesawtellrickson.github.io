@@ -67,3 +67,4 @@ MIT
 
 Embed Youtube videos
 Improve PDF embeds
+Add a quotes section
