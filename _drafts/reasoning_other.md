@@ -1,4 +1,8 @@
 
+
+Sudoku as an example. You can play it purely deductive by going step-by-step, or be abductive and make guesses.
+
+
 - Based on Logical Approach
 - Based on the Nature of Evidence
     - Statistical Reasoning: Relies on data and probabilities.

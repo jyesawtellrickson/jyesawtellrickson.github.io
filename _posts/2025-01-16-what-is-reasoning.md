@@ -58,6 +58,6 @@ We mention many of these with a description for completeness:
 
 But how can you measure the quality of your reasoning? How do current AI systems perform?
 
-In future work, we'll cover classic tests for evaluating reasoning as well as the current state of reasoning in AI models.
+In future work, we'll cover [classic tests for evaluating reasoning]({% post_url 2025-01-23-evaluating-reasoning %}) as well as the current state of reasoning in AI models.
 
 
