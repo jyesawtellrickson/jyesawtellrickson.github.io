@@ -9,7 +9,7 @@ We use functions every day to do useful things, but what is a function? A collec
 
 ## Examples
 
-As running examples, we'll use a few solution functions for the (ARC Prize)[https://arcprize.org/] from (Michael Hodel's ARC DSL)[https://github.com/michaelhodel/arc-dsl]. These functions utilise various helper functions which we'll not define and take as known (e.g. hmirror, vconcat), similarly there are various constants (e.g. THREE, TRUE). The following are three examples of increasing complexity:
+As running examples, we'll use a few solution functions for the [ARC Prize](https://arcprize.org/) from [Michael Hodel's ARC DSL](https://github.com/michaelhodel/arc-dsl). These functions utilise various helper functions which we'll not define and take as known (e.g. hmirror, vconcat), similarly there are various constants (e.g. THREE, TRUE). The following are three examples of increasing complexity:
 
 ```python
 def solve_4c4377d9(I):
@@ -92,7 +92,7 @@ The most familiar form of a function is its text form which was used to communic
 ## Tokenised
 The majority of the current SOTA code generators take the text form and tokenise it to feed into a transformer (though methods exist to tokenise at the character level). Since the text format is naturally a sequence, it suits the model architecture well. There are various tokenizers available, including code-specific ones. We'll look at GPT-2's BPE (similar to GPT-4), Code Llama (code-specialised, instruction-tuned) and another code model StarCoder (not instruction-tuned). Let's see how they process the text differently. Below is the tokenisation for our first function (ignoring the first line):
 
-```txt
+```
 GPT-4 (BPE): ['Ġ', 'Ġ', 'Ġ', 'Ġx', '1', 'Ġ=', 'Ġh', 'mir', 'ror', '(', 'I', ')', 'Ċ', 'Ġ', 'Ġ', 'Ġ', 'ĠO', 'Ġ=', 'Ġv', 'con', 'cat', '(', 'x', '1', ',', 'ĠI', ')', 'Ċ', 'Ġ', 'Ġ', 'Ġ', 'Ġreturn', 'ĠO']
 Code LLaMA (Code-Specialized): ['▁▁▁', '▁x', '1', '▁=', '▁h', 'mir', 'ror', '(', 'I', ')', '<0x0A>', '▁▁▁', '▁O', '▁=', '▁v', 'concat', '(', 'x', '1', ',', '▁I', ')', '<0x0A>', '▁▁▁', '▁return', '▁O']
 StarCoder (Code-Specialized): ['ĊĠĠĠ', 'Ġx', '1', 'Ġ=', 'Ġh', 'mirror', '(', 'I', ')', 'ĊĠĠĠ', 'ĠO', 'Ġ=', 'Ġv', 'concat', '(', 'x', '1', ',', 'ĠI', ')', 'ĊĠĠĠ', 'Ġreturn', 'ĠO']
