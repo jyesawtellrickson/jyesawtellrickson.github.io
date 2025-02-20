@@ -14,7 +14,7 @@ It's worth noting that there's a whole field of research dedicated to this calle
 
 ## LLMs and Evaluation
 
-LLMs have taken the world by storm and shown previously unbeleivable results on countless benchmarks. This, combine with the difficulty of directly scoring natural language has made it difficult to actually evaluate modern LLMs. With this in mind, we ask: can games serve as a good benchmarking tool?
+LLMs have taken the world by storm and shown previously unbelievable results on countless benchmarks. This, combine with the difficulty of directly scoring natural language has made it difficult to actually evaluate modern LLMs. With this in mind, we ask: can games serve as a good benchmarking tool?
 
 While LLMs have a wide range of functions, games can be used to target some of these, particularly:
 - basic understanding capabilities: they need to process the game state text to get an internal representation.
@@ -40,7 +40,7 @@ Now that we've seen how a specific game can be used to evaluate LLMs, how far ca
 Apart from the competitive games discussed above, the usage of LLMs as agents in a variety of single player games is explored.
 
 
-## An Argument Againts Games
+## An Argument Against Games
 
 While we argued that games are great for LLMs to compete because they cannot stagnate like a benchmark, this isn't entirely true. In many cases optimal strategies for games can exist, or even if they don't, the improvements can be diminishing as the strategies become close to optimal. For now, there's a lot more room here compared to existing benchmarks and this can be maintained by leveraging games requiring more complex strategies.
 
@@ -51,15 +51,3 @@ One can also argue that a lot of useful things can't be framed as games, e.g. de
 # Games in the Future
 
 At the end of the day, developing games is relatively cheap, observing the outcomes is entertaining and they're relatively easy to scale up to multiple LLMs and in complexity which makes them a great benchmark. I hope to see more evaluation frameworks like SnakeBench in the future.
-
-
-For:
-Games are good when there's no right or wrong, can decide who is better. Could also do a score, but often hard. E.g. LLM answers to questions 
-
-
-Notes
-Any benchmark could be framed as a game, it's a competition to see who gets most right or gives best answer
-A game is something with direct competition 
-Not all games are suitable, eg those with Nash equilibria 
-- [Zork](https://www.pcjs.org/software/pcx86/game/infocom/zork1/): in [this paper](https://arxiv.org/abs/2304.02868) the authors play the text-based game Zork with LLMs.
-As we continue to improve AI, games will no doubt evolve too ([here I discuss the future of sports](https://medium.com/swlh/future-sports-ais-next-step-e94e32819bde)). 
