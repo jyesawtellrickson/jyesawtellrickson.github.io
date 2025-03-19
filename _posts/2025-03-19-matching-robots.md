@@ -10,7 +10,11 @@ Sometimes when reading books it can be hard to get a grasp for a problem in prac
 
 When building multi-agent systems, it's important to plan in negotiation methods to help them navigate situations where they're competing for resources. This is one of the fundamental problems. That's why it's so amusing to see these Amazon robots fail so miserably to break out of their loop.
 
-We can model this problem as a simple game with two agents. Each agent has two actions: 1. wait (and let the other robot pass); 2. pass the other robot. Looking at the reward table for the scenario, we can see the rewards that agents get depending on their actions. It's clear that if they were in the state where both are waiting or both are moving that the obvious action is to change your action, assuming the other agent does nothing. However, this is the problem. The other agent sees the symmetric scenario and also changes their action. This causes an oscillation between states, making it impossible for them to reach a good state. This good state is better known as a pure strategy Nash equilibrium.
+We can model this problem as a simple game with two agents. Each agent has two actions: 1. wait (and let the other robot pass); 2. pass the other robot. Looking at the reward table for the scenario (see below), we can see the rewards that agents get depending on their actions. It's clear that if they were in the state where both are waiting or both are moving that the obvious action is to change your action, assuming the other agent does nothing. However, this is the problem. The other agent sees the symmetric scenario and also changes their action. This causes an oscillation between states, making it impossible for them to reach a good state. This good state is better known as a pure strategy Nash equilibrium.
+
+
+{% include fig.html url="/images/matching-pennies.png" description="Game table for our robot problem." %}
+
 
 By now it should be no surprise that this is a classic game theory problem, known as "matching pennies". There are other games such as the "prisoner's dilemma" or "battle of the sexes" which exhibit other interesting properties.
 
