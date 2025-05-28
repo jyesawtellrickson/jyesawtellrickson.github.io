@@ -13,4 +13,4 @@ In general, our goal is to reduce the complexity of the task. General language m
 - **Tiny models on tiny datasets**: there are also existing datasets that are custom created for training smaller language models, such as Tiny Shakespeare and TinyStories. These datasets also reduce the scope when training a language model, while still being widely applicable. Some of the trained models are just millions of parameters.
 - **Validating training curves**: a model doesn't need to be perfect to show evidence of improvements. When prototyping, if you can show that a model is learning faster (e.g. loss decreasing faster), it is good signal that your methodology is working.
 
-All of the above can be run locally on a reasonable GPU, so there's no excuse not to get experimenting!
+All of the above can be run locally on a reasonable GPU, so there's no excuse to not get experimenting!
