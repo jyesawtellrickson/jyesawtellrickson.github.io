@@ -57,4 +57,8 @@ And it's not only language modelling. Robotics is shocking. Somehow I see a vide
 
 ## What Now
 
+So we're beating all the benchmarks, we're creating agents that can operate over longer and longer timeframes, AI is accelerating human progress and beginning to make its own, and experts in the field are making their thoughts clear.
+
 Of course we're not there yet, of course there are plenty of reasons that current approaches could not work out, but the data is pushing more and more to quick (before 2030) arrival of AGI systems and I (we) need to normalise this view because the cost to not do so is shocking.
+
+If you want to read more, please refer to [AI 2027](https://ai-2027.com/) and [Situational Awareness](https://situational-awareness.ai/) which dive deeply into this topic. Even if you don't buy the timings for the predictions, the paths they lay out are still likely ones.
