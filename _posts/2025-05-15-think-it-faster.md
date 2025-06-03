@@ -23,21 +23,3 @@ Making a quick calculation to estimate the viability was a great start, 10 point
 
 
 All that to say, there are plenty of opportunities to get introspective. I'm slowly getting better at noticing them, and I do find it is making me more efficient (slowly). I just wish I had read that article faster! 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Training a model on a few samples
-
-Trying transformers first in cloud 
-
-"How could I have thought that faster?" — LessWrong 
