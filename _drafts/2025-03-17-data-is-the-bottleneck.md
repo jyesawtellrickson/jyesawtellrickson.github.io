@@ -18,7 +18,9 @@ Humanity's knowledgbase, a summary:
 Aspects:
 * reasoning <-> knowledge
 * depth <-> breadth
-* media: e.g. text, image, video, datastream
+* Information comes in many shapes and sizes, some of the most common include:
+    * Text: e.g. CommonCrawl is PBs of data [source](https://en.wikipedia.org/wiki/Common_Crawl)
+    * Image, video, datastream
 * size
 
 
