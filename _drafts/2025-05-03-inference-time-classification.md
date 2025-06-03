@@ -16,3 +16,12 @@ If the dataset has some underlying logic / structure, then our classifier should
 e.g. searching latent space for image classification
 
 Why don't we do test time search for image classification? CNNs are so fast but that's not a requirement for many tasks!!
+
+
+Methods:
+ - MC Inference and Bayesian Estimation (e.g. 30 forward passes gives Bayesian effect)
+ - Test time augmentation: apply transforms at test time, run inference for each view [tried running an experiment for this, but didn't yield good results]
+ - recurrent refinement: Recurrent Convolutional Network (RCN), ConvGRU, create hidden states for T turns then predict. ; predict-refine loop
+ - gradient based test-time adaptation
+ - score maximisation over latent programs: search over combination of transformations that yields a high-confidence digit class (need to account for the fact that it could just squish everything to be yi (1), priors, train the priors into a neural network, neural guided search)
+

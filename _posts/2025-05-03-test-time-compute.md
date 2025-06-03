@@ -49,7 +49,7 @@ $$p(y,z|x) = p(y|z, x) * p(z|x)$$
 At test time, the posterior p(z|x) must be computed or approximated. They often rely on Markov Chain Monte Carlo (MCMC) or Variational Inference which are computationally expensive. A prime example is Variational Autoencoders which consist of an encoder and decoder to model the mapping to and from a latent distribution.
 
 
-**Energy-based models** (EBMs) are a subset of probabilistic models which learn unnormalised probabilistic models. They learn useful landscapes which are then traversed at test-time to generate useful samples. While not traditional EBMs, diffusion models (e.g. Stable Diffusion) are score-based models and their training process has been shown to be equivalent to EBMs. Diffusion models iteratively refine the output, stepping through the score-based landscape until they find a good state.
+**Energy-based models** (EBMs) are a subset of probabilistic models which learn unnormalised probabilistic models. They learn useful landscapes which are then traversed at test-time to generate useful samples. While not traditional EBMs, diffusion models (e.g. Stable Diffusion) are score-based models and their training process has been shown to be equivalent to EBMs. Diffusion models **iteratively refine** the output, stepping through the score-based landscape until they find a good state.
 
 ## Versatile Compute Extension Methods
 

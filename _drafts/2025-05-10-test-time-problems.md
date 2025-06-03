@@ -1,19 +1,25 @@
 
+# Test-Time Compute Problems
 
-## The Test of Time
-
-Across these domains, test-time compute often compensates for limitations in model capacity or data efficiency. 
 
 Applied in domains where generalization, flexibility, or adaptation outweigh the need for low-latency inference.
 * Hard-to-generalize tasks
 * test time adaptation tasks
 
-# Notes
 
 
-Program synthesis and symbolic AI (symbolic search); known goal states so can check status and retry / adjust
-Iterative refinement
-Self-judge: proposing different paths and scoring them (e.g. LLM judge) to choose which one
+Guided search:
+* heuristic
+* learned or dynamic model (e.g. NN value model, self-judge LLM)
+
+Goal states (can check status and retry/adjust):
+* Known e.g. figure out the path to the end of the maze (A*)
+* unknown, e.g. find the most optimal solution, you want to decrease the cost (AlphaEvolve), you want to win (AlphaGo)
+* between: output = expected output for subproblems (ARC)
+
+Transition function:
+* Learned: dreamer
+* known: AlphaGo
 
 
 Types of problems:
@@ -63,7 +69,6 @@ Using an oracle:
 
 
 
-Self as the verifier? (e.g. LLMs)
 How do world models compare?
 
 
@@ -73,3 +78,10 @@ Aren't all NNs probabilistic models? What makes it unique?
 
 
 If I learn with data augmentations, does it produce better outcomes?
+
+
+
+
+# Notes
+
+Program synthesis and symbolic AI (symbolic search); known goal states so can check status and retry / adjust
