@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to View Programs
-categories: []
+title: Four Methods to Visualise Programs
+categories: [Knowledge]
 ---
 
 

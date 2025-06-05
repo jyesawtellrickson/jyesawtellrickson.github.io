@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacking at Length
-categories: [LLMs]
+categories: [LLMs, Experiment]
 ---
 
 Being reasonable can be hard. For LLMs it's even harder.

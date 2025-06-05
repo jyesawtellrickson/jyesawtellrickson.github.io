@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LLM Readability as a Tool
-categories: [AGI, LLM]
+categories: [AGI, LLMs]
 ---
 
 When training multilingual models a common problem is language mixing or code switching, in which models may respond in multiple languages when we would expect them to use just one. This can also happen in reasoning models, such as DeepSeek-R1. In their paper, they found that 

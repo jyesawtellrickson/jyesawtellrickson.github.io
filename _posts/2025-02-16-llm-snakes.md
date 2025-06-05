@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AGI as the Best Gamer
-categories: [AGI, LLM]
+categories: [AGI, LLMs, News]
 ---
 
 Games are fun. Humans love watching a variety of them from NFL to League of Legends to Mahjong. The competitive nature of games is enticing and the infinite strategies help keep them fresh. These factors also make them great testing grounds for AI. For example, recent work from the same group behind the ARC-AGI challenge pits LLMs against each other in games of snake to find out which is the best. In this article, let's discuss their findings along with other work towards using competitive games to evaluate AI. 

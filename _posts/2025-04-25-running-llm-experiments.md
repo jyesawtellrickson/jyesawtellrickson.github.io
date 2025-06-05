@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Running LLM Experiments Cheaply
-categories: [LLMs]
+title: How to Run Cheap LLM Experiments
+categories: [LLMs, Knowledge]
 ---
 
 As a researcher, it's common to have way more ideas than you have time to experiment with. This is especially true in the world of language modeling when you consider the cost of running such experiments. In this post I touch on some of the methods that I've seen to run experiments with language models without breaking the bank.

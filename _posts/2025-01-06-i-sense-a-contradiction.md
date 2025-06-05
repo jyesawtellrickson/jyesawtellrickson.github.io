@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Sense a Contradiction
-categories: [LLMs]
+categories: [LLMs, Experiment]
 ---
 
 When playing around with ChatGPT in the non-obvious space of prompts, you can find some interesting behaviours. 

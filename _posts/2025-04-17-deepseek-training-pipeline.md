@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The DeepSeek-R1 Training Pipeline
-categories: [LLMs]
+categories: [LLMs, Review]
 ---
 
 DeepSeek's R1 had it's time in the spotlight as a strong reasoning model that came 'out of nowhere'. One of the highlights of the model was that it was released publicly, including both the training process and weights. However, one thing lacking from the paper was an overview of the pipeline. Unsurprisingly, there are a few steps involved to produce such great results.

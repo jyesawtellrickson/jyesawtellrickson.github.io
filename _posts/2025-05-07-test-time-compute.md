@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Test-Time Compute Matters: From LLMs to Search"
-categories: [AGI]
+categories: [AGI, Knowledge]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maintaining Old Work
-categories: [AGI]
+categories: [AGI, Rant]
 ---
 
 > "We will update our paper list every two weeks and include all the following papers in the next version of our paper. Please Feel free to contact me in case we have missed any papers!" - ([Guo et al., 2024](https://github.com/taichengguo/LLM_MultiAgents_Survey_Papers))
