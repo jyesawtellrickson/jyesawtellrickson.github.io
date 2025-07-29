@@ -828,6 +828,32 @@ Modules - reusable parts of our design
   margin: 0 -2px 0 -5px;
 }
 
+figure.image {
+  text-align: center;
+  margin: 1.5rem auto;
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+  }
+}
+
+figure.image img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;
