@@ -1,0 +1,20 @@
+
+
+
+
+Reasoning models need some form of recurrence; they need a way to refer to and reason over previous thoughts or results.
+
+Article on test-time computes covers many methods that use recurrence. Let's discuss broad categories / tools.
+
+Define recurrence as repeated operations over a value, to improve quality of output.
+
+Internal recurrence, architectural recurrence (RNN, LPN, CTM)
+Reccurence over intermediares / iterative refinement (EBM, Diffusion)
+Recurrence over outputs, auto-regressive, prompt-recurrence (LLMs, CoT, ReAct)
+Recurrence over variables, explicit memory, symbolic or structured latent variables (NSM, Pointer networks; program synthesis?, Neural Turing Machines?)
+
+
+Recurrence over environment
+
+
+Combinations: Transformer-XL (internal + outputs)
