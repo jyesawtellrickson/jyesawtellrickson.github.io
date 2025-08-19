@@ -4,16 +4,6 @@ title: Understanding Recurrence in Modern Models
 categories: []
 ---
 
-- we've all heard of recurrent neural networks (RNN)
-- but there are many ways to 'recur' in a model
-- autoregressive models, e.g. transformers, as an example of recurrence
-- taxonomy of recurrence: sequence length, depth, spatial dimensions (e.g. GNN), others
-- All of these can be seen as: hk+1=fθ(hk,x) where the k is over something different (e.g. time, layer, spatial)
-- some of the key models
-- why recurrence is important
-- key issues with recurrence
-- next steps for recurrence
-
 # Understanding Recurrence in Modern Models
 
 We’ve all heard of recurrent neural networks (RNNs), the workhorse of sequence modeling for decades. RNNs explicitly model sequences by maintaining a hidden state that evolves over time, allowing the network to 'remember' information from previous inputs. But recurrence isn’t limited to RNNs. In fact, there are many ways that modern models implement some form of recurrence, often in unexpected ways.
