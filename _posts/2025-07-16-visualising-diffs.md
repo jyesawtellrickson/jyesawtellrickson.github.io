@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualising Code Diffs
-categories: [Tips]
+categories: [Productivity]
 ---
 
 When we write code we typically leverage something like Git or Mercurial to track changes we make to files. These systems make it easy to see what has changed at a glance without picking through every line of code. Personally, I use VSCode's Git integration. But who writes code themselves these days? When producing code with LLMs we still want to be able to track diffs easily. 
