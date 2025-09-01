@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hierarchical Reasoning Machines
+title: The Hierarchical Reasoning Model
 categories: [AGI, Review]
 ---
 
@@ -30,13 +30,13 @@ In short: it completely fails on ARC-AGI-2 evaluation with 0% accuracy (vs. 5% r
 
 One of the interesting things about HRM is that it directly provides uncertainty estimates, in contrast to typical LLM-based approaches which either lean on token probabilities or sampling, neither of which are robust. We can check how useful these uncertainty estimates are by measuring the correlation between accuracy and uncertainty. Specifically, we use the model's halting logits to get a probability after applying sigmoid. This is also not a direct uncertainty in the answer, but it does indicate when the model is confident enough to stop further refinements.
 
-{% include fig.html url="/images/hrm-conf.png" description="" width="256px" %}
+{% include fig.html url="/images/hrm-conf.png" description="" width="512px" %}
 
 Looking at the plot, there is a clear correlation between the predicted confidence and success rate (pearson r correlation of 0.8), though they're not calibrated well. The model is rarely conservative in its predictions, the success rate is almost always below the model's confidence. On the other hand, the model can have confidence exceeding 95% yet be 100% wrong in its predictions.
 
 We can go a step further and check the per-pixel accuracy. Here we see that the model can still have very low per-pixel accuracies with high confidence. It also shows that even some of the low confidence predictions (<10%) can score really high per-pixel accuracies (>90%). This isn't hugely surprising though, as in many ARC tasks by simply reproducing the input you can get fairly good results.
 
-{% include fig.html url="/images/hrm-conf-2.png" description="" width="256px" %}
+{% include fig.html url="/images/hrm-conf-2.png" description="" width="512px" %}
 
 The authors share some interesting visualisations which show the intermediate steps during the model's reasoning. The code to produce these figures wasn't included and I haven't prioritised producing them just yet, though it shouldn't be too difficult. I'll add it to the backlog as it may give some deeper understanding of the reasoning process of the model as it solves ARC problems.
 

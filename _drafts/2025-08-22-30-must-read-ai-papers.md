@@ -6,7 +6,7 @@ categories: [AGI]
 
 Whilst the popularity of AI continues to soar, it can feel like we're making so many new discoveries every day. It's easy to get lost in the current literature, but it's important to take a step back and put the field in context. If you're new to the AI field it's a great opportunity to make connections, or if you've long been around, a chance to review. The following is a list of the top 30 AI research papers compiled based on their impact to the overall AGI discourse, ordered chronologically. (AI is a wider field, e.g. computer vision, this list focuses on our path to AGI-level models.)
 
-I found it a great exercise to read through the papers. Each work represents a moment where someone saw the world differently, formalized a new idea, and challenged assumptions about what AI could achieve. By studying these breakthroughs, you not only learn the techniques but also experience the creativity, curiosity, and persistence that drove them. But, it's a long list, so take your time and enjoy!
+I found it a great exercise to read through the papers. Each work represents a time where someone thought differently, formalized a new idea, and challenged assumptions about what AI could achieve. By studying these breakthroughs, you not only learn the techniques but also experience the creativity, curiosity, and persistence that drove them. But, it's a long list, so take your time and enjoy!
 
 | Title | Authors | Year | Reason for Influence |
 |-------|---------|------|-----------------------|
