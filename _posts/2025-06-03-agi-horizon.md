@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Normalising a Short AGI Horizon
-categories: [AGI]
+categories: [AGI, Knowledge]
 ---
 
 [AI 2027](https://ai-2027.com/) was recently released and is another great forecast of how the next few years could play out, similar to another favourite of mine, [Situational Awareness](https://situational-awareness.ai/). While listening to the authors on the [Dwarkesh Podcast](https://www.dwarkesh.com/p/scott-daniel) I tried to look a bit deeper on my own thoughts. Why do I also believe AGI is coming soon? Why does it still seem so fantastical, despite my belief? To help myself, I decided to jot down the key points that have influenced that thinking. It's far from an exhaustive list, but are some of the latest facts that help me to stay grounded in my predictions.

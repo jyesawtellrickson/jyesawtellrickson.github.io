@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Recurrence in Modern Models
-categories: [AGI]
+categories: [AGI, Knowledge]
 ---
 
 We’ve all heard of recurrent neural networks (RNNs), the workhorse of sequence modeling for decades. RNNs explicitly model sequences by maintaining a hidden state that evolves over time, allowing the network to 'remember' information from previous inputs. But recurrence isn’t limited to RNNs. In fact, there are many ways that modern models implement some form of recurrence, often in unexpected ways.

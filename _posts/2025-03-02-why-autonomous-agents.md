@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Autonomous Software?
-categories: [AGI]
+categories: [AGI, Knowledge]
 ---
 
 With "agents" the hot topic of 2025, we should take a step back and ask ourselves, why do we want autonomous software? Let's explore some reasons we'd want agents making decisions themselves.

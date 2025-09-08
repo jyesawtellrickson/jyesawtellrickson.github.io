@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coding World Models with LLMs
-categories: [AGI]
+categories: [AGI, Tutorial]
 ---
 
 Recently I ran an experiment in which I tried to get LLMs to output explicit world models in the form of Python code which could be used as the core of a MCTS policy for control in basic gymnasium environments. This is different to typical world model learning which would be something like a parameterised neural network. The reason why we would care about something like this is for on-the-fly reasoning, such as in ARC-AGI-3 where agents must act in a completely new environment.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ARC-AGI 3 2025 July Demo
-categories: [AGI]
+categories: [AGI, Competition]
 ---
 
 ARC-AGI-3 is the latest challenge in Francois Chollet's ARC Prize. While currently still under development, the authors released a sample of the challenges and are running a small competition. In this post I'd like to discuss my attempt at 'hand-writing' some solutions and what it told me about a real solution. If you'd like to know more about the ARC-AGI-3 challenge, I previously wrote about it [here]({% post_url 2025-06-11-arc-agi-3 %}).

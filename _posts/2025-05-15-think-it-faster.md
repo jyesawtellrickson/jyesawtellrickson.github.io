@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Think it Faster in AI
-categories: []
+categories: [Productivity]
 ---
 
 Ever since reading ["How could I have thought that faster?"](https://www.lesswrong.com/posts/rYq6joCrZ8m62m7ej/how-could-i-have-thought-that-faster) this year, I have been trying to put it into practice. Working with AI models, I found there are plenty of opportunities. One can spend hours on some buggy code just to find the bug they fixed wasn't the real problem after all, or that someone had already solved it five years ago on Stack Overflow. One can invests hours into modelling to realise that there was a far simpler approach if you just thought about it from another angle...
