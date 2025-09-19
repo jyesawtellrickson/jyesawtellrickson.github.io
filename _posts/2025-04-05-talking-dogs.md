@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why we can't talk to dogs, yet
-categories: [LLMs, Projects]
+categories: [LLMs, Project]
 ---
 
 Wouldn't it be great if you could communicate directly with your dog? If you could ask him why he bit your furniture, or just understand what he's barking about? While research has tried address this in the past, the problem is still far from solved, and potentially unsolvable. Let's see why.

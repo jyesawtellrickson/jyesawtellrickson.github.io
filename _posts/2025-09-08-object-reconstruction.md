@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reconstructing Pixel Blocks
+title: Pixel Object Reconstruction with a Variational Autoencoder
 categories: [Tutorial]
 ---
 
