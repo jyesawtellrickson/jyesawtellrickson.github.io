@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nelder Mead Optimisation
-categories: []
+categories: [Knowledge]
 ---
 
 Optimisation is at the core of AI research. We spawn instances of massive models with trillions of parameters and then try to optimise their parameters towards some goal, typically represented by a loss function. We've become really good at this type of optimisation because it has a key property: we can calculate the gradient. Packages such as PyTorch automatically calculate the expected changes in our loss function if we were to tweak parameters (the gradients) which allows us to make meaningful progress towards the goal. But what if you don't have gradients?
