@@ -22,17 +22,19 @@ We are talking about aggressive compression here. We might take an image with th
 
 # Vector Symbolic Architectures
 
-Now, let’s do the exact opposite. If VAEs are about finding the absolute minimum number of variables to describe the world, Vector Symbolic Architectures (VSAs)—also known as Hyperdimensional Computing—are about exploding that information into a space so massive that we can rely on the law of large numbers to do our thinking for us.
+Now, let’s do the exact opposite. If VAEs are about finding the absolute minimum number of variables to describe the world, Vector Symbolic Architectures (VSAs), also known as Hyperdimensional Computing—are about exploding that information into a space so massive that we can rely on the law of large numbers to do our thinking for us.
 
-In a VSA, we don't use 10 dimensions. We don't even use the 1,000 dimensions typical of an LLM embedding. We use something on the order of 10,000 dimensions or more.
+In a VSA, we don't use 10 dimensions. We don't even use the 1,000 dimensions typical of an LLM embedding. We use something on the order of 10,000 dimensions or more. Some systems use as many as 10 million dimensions.
 
 Why on earth would we want to make our data larger? It comes down to orthogonality. In a 10,000-dimensional space, if you pick two vectors at random, they are almost guaranteed to be orthogonal (uncorrelated) to each other. This geometric quirk allows us to do something incredible: we can superimpose information without it getting muddied.
 
-VSAs define an algebra for these hypervectors. You can combine vectors using operations like "binding" and "bundling":
+VSAs define an algebra for these hypervectors. There are various different formulations (e.g. MAP, BSC, HRR) but they do similar things. You can combine vectors using operations like "binding" and "bundling":
 - Bundling (Superposition): You can add two vectors together ($A + B$) to create a vector that is similar to both. It’s like a memory that stores multiple items at once.
 - Binding (Association): You can multiply vectors ($A * B$) to create a new vector that is dissimilar to both constituents. This is great for assigning values to variables, like binding "Name" to "Jye."
 
 Because the space is so vast, these operations are incredibly robust. You can corrupt 40% of the bits in a hypervector and still retrieve the original information perfectly. It’s distributed representation in its purest form—holographic, noise-resistant, and strangely similar to how we suspect the biological brain might actually work.
+
+VSAs have been applied to complex reasoning tasks such as Raven's Matrices where they modelled the possible transformations between objects and ARC Prize where they were combined with neural models.
 
 # Conclusion
 
