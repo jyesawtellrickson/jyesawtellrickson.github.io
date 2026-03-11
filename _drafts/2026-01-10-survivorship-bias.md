@@ -1,4 +1,8 @@
 
+
+Among all the biases, survivorship bias has got to be one of my favorites. It feels so unnatural, yet totally makes sense when it's explained to you. It's horribly pervasive and has a bad feedback loop. For that reason, I wanted to talk a bit about it today.
+
+
 probability calculation
 
 health gurus, finance gurus, or any social media gurus for that matter.
