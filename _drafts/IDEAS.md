@@ -5,6 +5,9 @@ General posts:
 - New research
 - Paper Review
 - My fun project
+- a weekly literature summary?
+- Weekly learning summary 
+- self reflection and weekly reviews to lesswrong
 
 Also see "Small Research Projects" in Notion
 
@@ -25,9 +28,17 @@ Spaced Repetition
 
 Predicting goal keeper dive direction based on video in penalty shootout
 
+The AI hype curves: Plot ML hype-curves, when did CPU research die out? when did LLMs? RL?
+
 Given lesswrong create a knowledge map of concepts and relations
 
 Creating your own currency optimal amountss
+
+How do you condition a generative model on something?
+- FiLM - replace the normalisation layers in CNN architectures with learned functions.
+- Conditional DCGAN, concatenate constant feature maps of conditioning information with convolutional layer input
+
+Knot theory and repairing clothes, tangled usbs
 
 Weekly Reading Posts
 
@@ -49,7 +60,7 @@ Rant: low-trust environments are horribly inefficient, but necessary.
 Rant: Rant: low-trust environments are horribly inefficient, but necessary.
 
 
-
+Writing series: Given some problem, what's the model to use?
 
 Precision Recall is a cost trade-off.
 - Cost of shipping a faulty product FNs vs. cost of manual inspection of Positives
@@ -80,3 +91,13 @@ Article on problem solving techniques,
 - Eg reduction to absurdity
 - Abstraction or simplification
 - Induction
+
+
+What other intrinsic reward signals do people use 
+
+How much faster than a pursuer for any given shape to get away. e.g. Circle, square
+
+
+If the odds of winning are 1:10 and you have £100, how much should you bet each time to ensure there's only a 5% chance you'll lose your money. Each bet either double or lose
+
+Ginrummy chance of losing from full hand as game progresses
