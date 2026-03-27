@@ -10,11 +10,11 @@ In this article, I want to discuss two extremes: Variational Autoencoders (VAEs)
 
 ## Variational Autoencoders
 
-If you’ve ever tried to pack for a holiday in a carry-on bag, you understand the core philosophy of a Variational Autoencoder (VAE): compression is understanding.
+If you’ve ever tried to pack for a holiday in a carry-on bag, you understand the core philosophy of a Variational Autoencoder (VAE): compression is understanding. Europe's Ryanair has taught me this lesson all too well.
 
 The "Autoencoder" part is simple enough. It’s a neural network shaped like an hourglass. You feed data (like an image) into the wide top, it gets crunched down through progressively smaller layers into a tiny "bottleneck," and then the network tries to reconstruct the original image from that bottleneck on the other side. If the output looks like the input, you know that the tiny bottleneck contains all the essential information required to describe the data.
 
-But a standard autoencoder is a bit of a cheat—it memorizes specific points. The "Variational" part is where the magic (and the math) happens. Instead of mapping an input to a single fixed point in that bottleneck, a VAE maps it to a probability distribution (usually a Gaussian blob). It says, "This image is somewhere in this cloud of possibilities."
+But a standard Autoencoder is a bit of a cheat—it memorizes specific points. The "Variational" part is where the magic (and the math) happens. Instead of mapping an input to a single fixed point in that bottleneck, a VAE maps it to a probability distribution (usually a Gaussian blob). It says, "This image is somewhere in this cloud of possibilities."
 
 This forces the model to learn a latent space—a smooth, continuous manifold where similar concepts live near each other. If you train a VAE on faces, you don't just get a database of JPEGs. You get a coordinate system for "faceness." You might find that moving along one dimension changes the angle of the head, while another changes the skin tone.
 
