@@ -1,0 +1,1 @@
+Figure system 0 trained on 1,000 hours. Nvidia Open source robot 40k hours. All so small compared to other domains! Each book is 10 hours of reading and it's read millions!
