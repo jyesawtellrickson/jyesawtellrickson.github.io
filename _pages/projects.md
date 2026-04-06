@@ -8,26 +8,13 @@ title: Projects
 <div id="archives">
   <section id="archive">
      <h3>Most Recent Projects</h3>
-      {%for post in site.projects %}
-      {% unless post.next %}
+      {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
       <ul class="this">
-          {% else %}
-          {% capture month %}{{ post.date | date: '%B %Y' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
-          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-          {% if year != nyear %}
+      {% for post in sorted_projects %}
+          <li>
+            <b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{ post.title }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{% endif %}
+          </li>
+      {% endfor %}
       </ul>
-      <h2 style="text-align:left;">{{ post.date | date: '%Y' }}</h2>
-      <ul class="past">
-          {% endif %}
-          {% if month != nmonth %}
-          <h3 style="text-align:left;">{{ post.date | date: '%B %Y' }}</h3>
-          {% endif %}
-          {% endunless %}
-          <p><b><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></b> - {% if post.date and post.date != "" %}{{ post.date | date: "%e %B %Y" }}{%endif%}</p>
-          {% endfor %}
-      </ul>
-    <h3>Oldest Projects</h3>
   </section>
 </div>
