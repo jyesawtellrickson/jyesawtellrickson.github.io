@@ -1,3 +1,9 @@
+---
+layout: post
+title: The Hidden Power of Magnetic Data
+categories: [Data]
+---
+
 If you've worked in data science for AI a while, you've probably seen a lot of standard business data (login, view, click, purchase, etc.), and got sick of training vision models on slightly different images, fine-tuning a LLM to spit out just the right text.
 
 Is that it, you ask? Far from it! There are loads of other interesting data formats and problems that are slightly outside the 'everyday' use. To become more acquainted with the different sources I wanted to start a series on interesting data where I explore these in detail.
@@ -6,15 +12,26 @@ In this article let's look into magnetic data.
 
 # What Does the Data Actually Look Like?
 
-At its core, magnetic data is typically a three-dimensional time series. Most sensors (magnetometers) provide readings for the $X, Y,$ and $Z$ axes, representing the magnetic flux density at a specific point in space.Because these sensors are often mobile—embedded in your smartphone, a drone, or a wearable—the data is frequently treated as spatial measurements. You aren't just measuring a signal over time; you are mapping a 3D vector field as you move through it.
+At its core, magnetic data is typically a three-dimensional time series. Most sensors (magnetometers) provide readings for the $X, Y,$ and $Z$ axes, representing the magnetic flux density at a specific point in space. These can also be considered as a 3d vector. These sensors are often mobile: embedded in a smartphone, a drone, or a wearable so the data is frequently treated as spatial measurements. From a physics standpoint, we can consider this as mapping out a dynamic 3D vector field. Note that due to the direction of the signal affecting measurement, the orientation of the sensor also impacts the measurement, the same location with the same magnetic field would yield different results depending on the orientation.
 
 # The Physics: Measuring the Unseen
 
-To model magnetic data, you have to understand the "noise" you’re swimming in.The Earth’s Baseline: The Earth has a consistent but weak magnetic field (roughly $25$ to $65\,\mu\text{T}$). This is your "Global Constant."The Disturbers: Any ferromagnetic object (like the rebar in a concrete floor or a passing car) warps this field. These objects have magnetic permeability, meaning the field prefers to flow through them rather than the air.The Inverse Cube Law: Unlike light, which drops off at $1/r^2$, the magnetic field of a dipole (like an iron bar) drops off at $1/r^3$. This means the signal disappears fast. An iron bar might be twice as strong as the Earth's field at its surface, but move just a few centimeters away, and it's already lost in the background noise.
+To model magnetic data, you have to understand the "noise" you’re swimming in.
+- The Earth’s Baseline: The Earth has a consistent but weak magnetic field (roughly $25$ to $65\,\mu\text{T}$). This is acts as a "Global Constant" that you can measure wherever you go - it's what powers compasses and similar navigation systems.
+- The Disturbers: Any ferromagnetic object (like the rebar in a concrete floor or a passing car) warps this field. These objects have magnetic permeability, meaning the field prefers to flow through them rather than the air. There are also many magnetic sources in the urban environment. The small magnet in a phone is around 1000 times stronger than the Earth's magnetic field.
+- The Inverse Cube Law: Unlike light, which drops off at $1/r^2$, the magnetic field of a dipole (like an iron bar) drops off at $1/r^3$. This means the signal disappears fast. An iron bar might be twice as strong as the Earth's field at its surface, but move just a few centimeters away, and it's already lost in the background noise.
+
+This is one of the key dificulties: how can you map the environment when there are so many noisy signals which also vary significantly. 
 
 # Sensor Sensitivity: From Digital Silence to "Screaming"
 
-The hardware you choose determines your "visibility":Consumer MEMS (Smartphone): Resolution of $\approx 0.15\,\mu\text{T}$. If a signal is smaller than that, it’s "digital silence."Scientific Fluxgate Magnetometer: Can detect signals down to $0.001\,\text{nT}$. At this level, a steel ship a hundred meters away is "screamingly loud."ObjectDetectable Distance (Standard Sensor)Iron Rebar$\approx 20\text{--}30\,\text{cm}$A Car$\approx 2\text{--}5\,\text{meters}$A Steel Ship$\approx 50\text{--}100\,\text{meters}$Submerged Pipeline$\approx 5\text{--}10\,\text{meters}$How We Capture It: Hall Effect vs. AMRMost modern AI applications use tiny MEMS (Micro-Electro-Mechanical Systems). There are two dominant ways to think about these:
+The hardware you choose determines your "visibility":
+- Consumer MEMS (Smartphone): Resolution of $\approx 0.15\,\mu\text{T}$. If a signal is smaller than that, it’s "digital silence."
+- Scientific Fluxgate Magnetometer: Can detect signals down to $0.001\,\text{nT}$. At this level, a steel ship a hundred meters away is "screamingly loud."
+
+ObjectDetectable Distance (Standard Sensor)Iron Rebar$\approx 20\text{--}30\,\text{cm}$A Car$\approx 2\text{--}5\,\text{meters}$A Steel Ship$\approx 50\text{--}100\,\text{meters}$Submerged Pipeline$\approx 5\text{--}10\,\text{meters}$How We Capture It: Hall Effect vs. AMRMost modern AI applications use tiny MEMS (Micro-Electro-Mechanical Systems). 
+
+There are two dominant ways to think about these:
 1. The Hall Effect (The "Pushed Water" Analog): Imagine a river (electrical current) flowing through a channel. When a wind (magnetic field) blows perpendicular to the river, it pushes the water up against one bank. By measuring the "pushed water" (the Hall Voltage), we can calculate the strength of the wind. Hall sensors are generally non-magnetic themselves.
 2. Anisotropic Magnetoresistive (AMR) (The "Hiker" Analog): Imagine hikers traveling along a trail with a specific grain. An external magnetic field is like a force that twists the entire landscape, rotating that grain. The hikers now have to change their gait to walk against the new pattern, which changes the difficulty of the journey (the resistance).
 
@@ -44,18 +61,7 @@ Magnetic data takes us out of the clean, digital world and back into the "fuzz" 
 
 
 
-
-
-- what does the data look like
-typically timeseries
-three dimensional
-often used as spatial measurements
-
-
 - what is the physics behind the data generation
-magnetic fields collected in three directions relative to the measurement device (can generally use other measurement devices to map to real world coordinates)
-magnetic field is defined by strength and direction
-Earth has a weak magnetic field (25 to 65 microteslas vs small neodymium magnet in phone which is 10K-100K) that is consistent. Because of this, easily influenced by metal eg car, rebar,
 ferromagents- the earth's magnetic field induces magnetism in ferromagnetic objects by aligning their domains (dipoles?)
 magnetic permeability - magnetic feilds want to pass through line of least resistance and will flow towards oferromagnetic objects
 iron bar measured at 2 to 1 times stronger than the earths field at the surface but drops off at r^3 (magnetic feed of a dipole) so at just a few cm it would be less than the earths field
@@ -138,25 +144,3 @@ https://link.springer.com/content/pdf/10.1007/978-3-030-95384-3_5.pdf
 
 
 
-
-
-Most interesting datasets to work with
-Eg satellite
-audio, e.g. animal sounds, earthquakes
-Mangnetometer / geomagnetic field data
-lidar point cloud
-network traffic (computers or humans)
-EEG (other medical)
-tactile sensor data, taxels
-eye-tracking
-genes
-telescope data, e.g. spectral imagery
-
-
-- what does the data look like
-- what is the physics behind the data generation
-- what tools to collect the data
-- what are the applications / interesting papers
-- what models can be applied
-
-car driving past viewed through all the different data types
