@@ -50,14 +50,10 @@ But what is there to look out for when using a loss function?
 In regression tasks we (largely) predict continuous values. Most functions are basically how far is your number from the correct number. 'Farness' can be measured by various distance functions such as linear (MAE), quadratic distance (MSE), relative distance (MSLE) or percentage difference (MAPE). 
 
 MSE (L2 loss)
-- Mean Square Error or Root Mean Square ERror
-- The standard deviation of the residuals
-- Heavily penalises large errors.
-- https://www.statisticshowto.datasciencecentral.com/rmse/
+- Mean Square Error or Root Mean Square Error. Calculated as the standard deviation of the residuals. Heavily penalises large errors.
 
 MAE (L1 loss)
-- Mean Absolute Error
-- The average of the absolute value of the residuals    
+- Mean Absolute Error. The average of the absolute value of the residuals    
 
 Huber Loss:
 - Combination of MSE and MAE
@@ -78,7 +74,7 @@ Compared to regression, the signal is often weaker, only telling you which class
 Binary/Categorical Cross Entropy
 - Measures the overlap between two probability distributions (e.g. logits).
 - Can be weighted if there is a large class imbalance.
-- Cross entropy is defined as below. Most labels have only p=1 for one class so it’s simply -log(q).
+- Most labels have only p=1 for one class so it’s simply -log(q).
 - From the maximum likelihood perspective we want to maximise the probability of the correct class, q, but q is a probability which has bad properties for loss functions, so we take the negative logarithm to bound it from 0 to inf.
 
 KL Divergence:
