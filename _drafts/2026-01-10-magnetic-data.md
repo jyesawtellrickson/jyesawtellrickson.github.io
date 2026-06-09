@@ -4,7 +4,7 @@ title: The Hidden Power of Magnetic Data
 categories: [Data]
 ---
 
-If you've worked in data science for AI a while, you've probably seen a lot of standard business data (login, view, click, purchase, etc.), and got sick of training vision models on slightly different images, fine-tuning a LLM to spit out just the right text.
+If you've worked in data science or AI for a while, you've probably seen a lot of standard business data (login, view, click, purchase, etc.), and got sick of training vision models on slightly different images, fine-tuning a LLM to spit out just the right text.
 
 Is that it, you ask? Far from it! There are loads of other interesting data formats and problems that are slightly outside the 'everyday' use. To become more acquainted with the different sources I wanted to start a series on interesting data where I explore these in detail.
 
@@ -21,7 +21,7 @@ To model magnetic data, you have to understand the "noise" you’re swimming in.
 - The Disturbers: Any ferromagnetic object (like the rebar in a concrete floor or a passing car) warps this field. These objects have magnetic permeability, meaning the field prefers to flow through them rather than the air. There are also many magnetic sources in the urban environment. The small magnet in a phone is around 1000 times stronger than the Earth's magnetic field.
 - The Inverse Cube Law: Unlike light, which drops off at $1/r^2$, the magnetic field of a dipole (like an iron bar) drops off at $1/r^3$. This means the signal disappears fast. An iron bar might be twice as strong as the Earth's field at its surface, but move just a few centimeters away, and it's already lost in the background noise.
 
-This is one of the key dificulties: how can you map the environment when there are so many noisy signals which also vary significantly. 
+This is one of the key difficulties: how can you map the environment when there are so many noisy signals which also vary significantly. 
 
 # Sensor Sensitivity: From Digital Silence to "Screaming"
 
