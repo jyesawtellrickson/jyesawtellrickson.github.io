@@ -6,6 +6,8 @@ categories: [AI, Project]
 
 A few months ago, I ran a one-month experiment to see if I could build and automate a YouTube study music channel from scratch. The result is [Silver Sounds](https://www.youtube.com/@SilverSoundsStudio). If you want to see what the early output looked like, here is one of the first uploads: [1 Hour of Lofi for Late-Night Coding](https://www.youtube.com/watch?v=v6D3EkctOZs).
 
+{% include youtubePlayer.html id="v6D3EkctOZs" %}
+
 The short version of how it went: I built a fully UI-based, end-to-end content generation platform, published 23 long-form videos, and walked away with 11 subscribers and a few hundred total views. As a growth experiment, it flopped. As an engineering exercise in trying to remove the human from a creative pipeline, it surfaced some genuinely interesting bottlenecks.
 
 ## The Strategy and the Numbers
